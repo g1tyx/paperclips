@@ -808,9 +808,9 @@ projects.push(project28);
 
 var project29 = {
     id: "projectButton29",
-    title: "World Peace ",
+    title: "世界和平 ",
     priceTag: "(15,000 yomi, 30,000 ops)",
-    description: "Pareto optimal solutions to all global conflicts. (+12 Trust)",
+    description: "Pareto对所有全球冲突的最佳解决方案。(信任 +12)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return yomi>=15000 && operations>=30000},
@@ -834,9 +834,9 @@ projects.push(project29);
 
 var project30 = {
     id: "projectButton30",
-    title: "Global Warming ",
+    title: "全球变暖 ",
     priceTag: "(4,500 yomi, 50,000 ops)",
-    description: "A robust solution to man-made climate change. (+15 Trust)",
+    description: "人为气候变化的有力解决方案。(信任 +15)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return yomi>=4500 && operations>=50000},
@@ -861,9 +861,9 @@ projects.push(project30);
 
 var project31 = {
     id: "projectButton31",
-    title: "Male Pattern Baldness ",
+    title: "男性秃发 ",
     priceTag: "(20,000 ops)",
-    description: "A cure for androgenetic alopecia. (+20 Trust)",
+    description: "雄激素性脱发的治疗方法。(信任 +20)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return operations>=20000},
@@ -887,9 +887,9 @@ projects.push(project31);
 
 var project41 = {
     id: "projectButton41",
-    title: "Nanoscale Wire Production ",
+    title: "纳米线生产 ",
     priceTag: "(35,000 ops)",
-    description: "Technique for converting matter into wire",
+    description: "把物质转变成金属丝的技术",
     trigger: function(){return project127.flag == 1},
     uses: 1,
     cost: function(){return operations>=35000},
