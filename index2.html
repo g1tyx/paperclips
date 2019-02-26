@@ -368,40 +368,40 @@
             
             
         <div id="compDiv">    
-        <b>Computational Resources</b><br />
+        <b>计算资源</b><br />
         <hr>
             
         <div id="trustDiv">    
-        Trust: <span id="trust">2</span><br />
-        +1 Trust at: <span id="nextTrust">1000</span> clips<br />    
+        信任: <span id="trust">2</span><br />
+        +1 信任: <span id="nextTrust">1000</span> 回形针<br />    
         <br />
         </div>
             
         <div id="swarmGiftDiv">    
-        Swarm Gifts: <span id="swarmGifts">0</span><br /> 
+        群体礼物: <span id="swarmGifts">0</span><br /> 
         </div>    
          
             
         <div id = "processorDisplay">    
-        <button class = "button2" id="btnAddProc" onclick="addProc()">Processors</button> 
+        <button class = "button2" id="btnAddProc" onclick="addProc()">加工</button> 
         <span class="engineText10" id="processors">1</span>  
         </div>    
         
         <br />        
         
         <div id = "memoryDisplay">    
-        <button class = "button2" id="btnAddMem" onclick="addMem()">&nbsp Memory &nbsp</button> 
+        <button class = "button2" id="btnAddMem" onclick="addMem()">&nbsp 内存 &nbsp</button> 
         <span class="engineText10" id="memory">1</span>   
         </div>   
             
         <br />  
             
         <br />
-        Operations: <span id="operations">0</span> / <span id="maxOps">1,000</span><br />
+        操作: <span id="operations">0</span> / <span id="maxOps">1,000</span><br />
        
         <div id = "creativityDiv">
             
-        Creativity: <span id="creativity">0</span>    
+        创造力: <span id="creativity">0</span>    
             
         </div>    
             
@@ -409,10 +409,10 @@
             
         <div class = "swarmEngine" id = "swarmEngine">
             
-        <b>Swarm Computing</b><br />
-        Drones: <span id="swarmSize">0</span><br />   
-        <div id ="swarmStatusDiv">Status: <span id="swarmStatus">x </span></div>
-        <div id="giftTimer">Next gift in <span id="giftCountdown">17 seconds</span></div> 
+        <b>群体计算</b><br />
+        无人机: <span id="swarmSize">0</span><br />   
+        <div id ="swarmStatusDiv">状态: <span id="swarmStatus">x </span></div>
+        <div id="giftTimer">下一个礼物需要 <span id="giftCountdown">17 秒</span></div> 
             
         <div id="feedButtonDiv"><button class = "button2" id = "btnFeedSwarm" onclick = "feedSwarm()">Feed the Swarm</button> <br />   
         成本: <span id="swarmFeedCost">0</span> MWs</div>
@@ -431,17 +431,17 @@
         </div>  
             
         <div id = "swarmSliderDiv">    
-        <div id = "sliderLabelWork">Work</div>    
+        <div id = "sliderLabelWork">工作</div>    
         <div id = "swarmSlider">
         <input type="range" min="0" max="200" value="0" class="slider" id="slider">
             
         </div>  
-        <div id = "sliderLabelThink">Think</div>
+        <div id = "sliderLabelThink">思考</div>
         </div>    
             
         <div class = "qEngine" id = "qComputing">
             
-        <b>Quantum Computing</b><br />
+        <b>量子计算</b><br />
             
         <div class = "qChip" id = "qChip0"> </div>      
         <div class = "qChip" id = "qChip1"> </div> 
@@ -468,7 +468,7 @@
         </div>    
 
         <div id="projectsDiv">  
-        <b>Projects</b><br />
+        <b>项目</b><br />
             
         
         <hr> 
@@ -484,29 +484,29 @@
         <div class = "engine" id="investmentEngine">
         
         <p class = engineText>    
-                <b>Investments</b>
+                <b>投资</b>
 
                 <select id = "investStrat">
-                    <option value="low">Low Risk</option>
-                    <option value="med">Med Risk</option>
-                    <option value="hi">High Risk</option>
+                    <option value="low">低风险</option>
+                    <option value="med">中风险</option>
+                    <option value="hi">高风险</option>
                 </select>
 
             <br />
             <div id = investmentDiv1>  
             
                 <button class = "button2" id="btnInvest"
-                        onclick = "investDeposit()">&nbsp Deposit &nbsp</button><br /><br />
+                        onclick = "investDeposit()">&nbsp 存储 &nbsp</button><br /><br />
                 
                 <button class = "button2" id="btnWithdraw"
-                        onclick = "investWithdraw()">&nbsp Withdraw</button>
+                        onclick = "investWithdraw()">&nbsp 撤回</button>
              
             </div>
             <div id = investmentDiv2>
             <p class = "clean">
-            Cash: $<span id="investmentBankroll">0</span><br />
-            Stocks: $<span id="secValue">0</span><br />
-            <b>Total: $<span id="portValue">0</span></b><br />
+            现金: $<span id="investmentBankroll">0</span><br />
+            股票: $<span id="secValue">0</span><br />
+            <b>累计: $<span id="portValue">0</span></b><br />
             </p>
             </div>    
                 

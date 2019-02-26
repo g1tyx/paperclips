@@ -7,9 +7,9 @@ var activeProjects = [];
 
 var project1 = {
     id: "projectButton1",
-    title: "Improved AutoClippers ",
+    title: "改进的自动回形针 ",
     priceTag: "(750 ops)",
-    description: "Increases AutoClipper performance 25%",
+    description: "提高自动回形针性能25%",
     trigger: function(){return clipmakerLevel>=1},
     uses: 1,
     cost: function(){return operations>=750},
