@@ -1818,9 +1818,9 @@ projects.push(project131);
 
 var project132 = {
     id: "projectButton132",
-    title: "Monument to the Driftwar Fallen ",
-    priceTag: "(250,000 操作, 125,000 creat, 50 nonillion clips)",
-    description: "Gain 50,000 honor  ",
+    title: "漂流者纪念碑倒下了 ",
+    priceTag: "(250,000 操作, 125,000 创造力, 50 nonillion 回形针)",
+    description: "得到 50,000 荣誉  ",
     trigger: function(){return project121.flag == 1},
     uses: 1,
     cost: function(){return operations>=250000 && creativity >= 125000 && unusedClips >= Math.pow(10,30)*50},
@@ -1845,9 +1845,9 @@ projects.push(project132);
 
 var project133 = {
     id: "projectButton133",
-    title: "Threnody for the Heroes of "+threnodyTitle+" ",  
-    priceTag: "(" + threnodyCost.toLocaleString() + " creat, " + (2*(threnodyCost/5)).toLocaleString() + " yomi)",
-    description: "Gain 10,000 honor  ",
+    title: "为英雄们的挽歌 "+threnodyTitle+" ",  
+    priceTag: "(" + threnodyCost.toLocaleString() + " 创造力, " + (2*(threnodyCost/5)).toLocaleString() + " yomi)",
+    description: "得到 10,000 荣誉  ",
     trigger: function(){return project121.flag == 1 && probeUsedTrust == maxTrust},
     uses: 1,
     cost: function(){return yomi>=(2*(threnodyCost/5)) && creativity >= threnodyCost},
@@ -1860,11 +1860,11 @@ var project133 = {
         yomi = yomi-(2*(threnodyCost/5));
         document.getElementById("yomiDisplay").innerHTML = yomi.toLocaleString();
         threnodyCost = threnodyCost + 10000;
-        project133.title = "Threnody for the Heroes of "+threnodyTitle+" ";
-        project133.priceTag = "(" + threnodyCost.toLocaleString() + " creat, " + (2*(threnodyCost/5)).toLocaleString() + " yomi)";
+        project133.title = "为英雄们的挽歌 "+threnodyTitle+" ";
+        project133.priceTag = "(" + threnodyCost.toLocaleString() + " 创造力, " + (2*(threnodyCost/5)).toLocaleString() + " yomi)";
         honor = honor + 10000;
         document.getElementById("honorDisplay").innerHTML = honor.toLocaleString();
-        displayMessage("Deep Listening is listening in every possible way to everything possible to hear no matter what you are doing. ");
+        displayMessage("深度聆听是以每一种可能的方式聆听每一种可能听到的，无论你在做什么。 ");
         project133.uses = (project133.uses + 1);
         project133.element.parentNode.removeChild(project133.element);
         var index = activeProjects.indexOf(project133);
@@ -1876,9 +1876,9 @@ projects.push(project133);
 
 var project134 = {
     id: "projectButton134",
-    title: "Glory ",
+    title: "荣耀 ",
     priceTag: "(200,000 操作, 30,000 yomi)",
-    description: "Gain bonus honor for each consecutive victory  ",
+    description: "为每一个连续的胜利获得额外的荣誉  ",
     trigger: function(){return project121.flag == 1},
     uses: 1,
     cost: function(){return operations>=200000 && yomi >= 30000},
