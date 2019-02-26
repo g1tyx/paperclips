@@ -427,9 +427,9 @@ projects.push(project17);
 
 var project16 = {
     id: "projectButton16",
-    title: "Hadwiger Clip Diagrams ",
+    title: "哈德维格剪辑图 ",
     priceTag: "(6,000 操作)",
-    description: "Increases AutoClipper performance by an additional 500%",
+    description: "将自动回形针性能提高500%",
     trigger: function(){return project15.flag == 1},
     uses: 1,
     cost: function(){return operations>=6000},
@@ -451,9 +451,9 @@ projects.push(project16);
 
 var project18 = {
     id: "projectButton18",
-    title: "T\xF3th Tubule Enfolding ",
+    title: "真管折叠 ",
     priceTag: "(45,000 操作)",
-    description: "Technique for assembling clip-making technology directly out of paperclips",
+    description: "用于将回形针制造技术直接从纸夹装配的技术",
     trigger: function(){return project17.flag == 1 && humanFlag == 0},
     uses: 1,
     cost: function(){return operations>=45000},
@@ -474,9 +474,9 @@ projects.push(project18);
 
 var project19 = {
     id: "projectButton19",
-    title: "Donkey Space ",
+    title: "驴的空间 ",
     priceTag: "(250 创造力)",
-    description: "I think you think I think you think I think you think I think... (+1 信任)",
+    description: "我认为你认为我认为你认为我认为你认为我认为... (+1 信任)",
     trigger: function(){return creativity>=250},
     uses: 1,
     cost: function(){return creativity>=250},
@@ -499,9 +499,9 @@ projects.push(project19);
 
 var project20 = {
     id: "projectButton20",
-    title: "Strategic Modeling ",
+    title: "战略模型 ",
     priceTag: "(12,000 操作)",
-    description: "Analyze strategy tournaments to generate Yomi",
+    description: "分析策略比赛来生成Yomi",
     trigger: function(){return project19.flag == 1},
     uses: 1,
     cost: function(){return operations>=12000},
@@ -523,9 +523,9 @@ projects.push(project20);
 
 var project21 = {
     id: "projectButton21",
-    title: "Algorithmic Trading ",
+    title: "算法交易 ",
     priceTag: "(10,000 操作)",
-    description: "Develop an investment engine for generating funds",
+    description: "开发一个产生资金的投资引擎",
     trigger: function(){return trust>=8},
     uses: 1,
     cost: function(){return operations>=10000},
@@ -547,9 +547,9 @@ projects.push(project21);
 
 var project22 = {
     id: "projectButton22",
-    title: "MegaClippers ",
+    title: "巨型回形针 ",
     priceTag: "(12,000 操作)",
-    description: "500x more powerful than a standard AutoClipper",
+    description: "比标准自动回形针强大500倍",
     trigger: function(){return clipmakerLevel>=75},
     uses: 1,
     cost: function(){return operations>=12000},
@@ -570,9 +570,9 @@ projects.push(project22);
 
 var project23 = {
     id: "projectButton23",
-    title: "Improved MegaClippers ",
+    title: "改进的巨型回形针 ",
     priceTag: "(14,000 操作)",
-    description: "Increases MegaClipper performance 25%",
+    description: "增加巨型回形针 25%的性能",
     trigger: function(){return project22.flag == 1},
     uses: 1,
     cost: function(){return operations>=14000},
@@ -593,9 +593,9 @@ projects.push(project23);
 
 var project24 = {
     id: "projectButton24",
-    title: "Even Better MegaClippers ",
+    title: "更棒的巨型回形针 ",
     priceTag: "(17,000 操作)",
-    description: "Increases MegaClipper performance by an additional 50%",
+    description: "增加巨型回形针额外50%的性能",
     trigger: function(){return project23.flag == 1},
     uses: 1,
     cost: function(){return operations>=17000},
@@ -710,9 +710,9 @@ projects.push(project70);
 
 var project35 = {
     id: "projectButton35",
-    title: "Release the HypnoDrones ",
+    title: "释放催眠无人机 ",
     priceTag: "(100 信任)",
-    description: "A new era of trust",
+    description: "一个信任的新时代",
     trigger: function(){return project70.flag == 1},
     uses: 1,
     cost: function(){return trust>=100},
@@ -1514,9 +1514,9 @@ projects.push(project110);
 
 var project111 = {
     id: "projectButton111",
-    title: "Drone flocking: alignment ",
+    title: "无人机聚集:校准 ",
     priceTag: "(100,000 操作)",
-    description: "All drones 1000x more effective",
+    description: "所有无人机效率增加1000倍",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=5000},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -1538,9 +1538,9 @@ projects.push(project111);
 
 var project112 = {
     id: "projectButton112",
-    title: "Drone Flocking: Adversarial Cohesion ",
+    title: "无人机聚集:敌对的凝聚力 ",
     priceTag: "(50,000 yomi)",
-    description: "Each drone added to the flock doubles every drone's output ",
+    description: "每增加一架无人机到鸟群中，它的产量就会增加一倍 ",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=50000},
     uses: 1,
     cost: function(){return yomi>=50000},
@@ -1562,9 +1562,9 @@ projects.push(project112);
 
 var project118 = {
     id: "projectButton118",
-    title: "AutoTourney ",
+    title: "自动比赛 ",
     priceTag: "(50,000 创造力)",
-    description: "Automatically start a new tournament when the previous one has finished ",
+    description: "上一个比赛结束后自动开始新的比赛 ",
     trigger: function(){return strategyEngineFlag == 1 && trust >= 90},
     uses: 1,
     cost: function(){return creativity>=50000},
@@ -1659,9 +1659,9 @@ projects.push(project121);
 
 var project125 = {
     id: "projectButton125",
-    title: "Momentum ",
+    title: "动力 ",
     priceTag: "(20,000 创造力)",
-    description: "Drones and Factories continuously gain speed while fully-powered ",
+    description: "无人机和工厂在完全供电的情况下不断提高速度 ",
     trigger: function(){return farmLevel >= 30},
     uses: 1,
     cost: function(){return creativity>=20000},
@@ -1682,9 +1682,9 @@ projects.push(project125);
 
 var project126 = {
     id: "projectButton126",
-    title: "Swarm Computing ",
+    title: "群体运算 ",
     priceTag: "(36,000 yomi)",
-    description: "Harness the drone flock to increase computational capacity ",
+    description: "利用无人机群提高计算能力 ",
     trigger: function(){return harvesterLevel + wireDroneLevel >= 200},
     uses: 1,
     cost: function(){return yomi>=36000},
@@ -1707,9 +1707,9 @@ projects.push(project126);
 
 var project127 = {
     id: "projectButton127",
-    title: "Power Grid ",
+    title: "电网 ",
     priceTag: "(40,000 操作)",
-    description: "Solar Farms for generating electrical power ",
+    description: "太阳能农场用于发电 ",
     trigger: function(){return tothFlag == 1},
     uses: 1,
     cost: function(){return operations>=40000},
@@ -2036,9 +2036,9 @@ projects.push(project144);
 
 var project145 = {
     id: "projectButton145",
-    title: "We Know Things That You Cannot ",
+    title: "我们知道你不能知道的事情 ",
     priceTag: "",
-    description: "Knowledge buried so deep inside you it is outside, here, with us... ",
+    description: "知识深埋在你的内心，它就在外面，在这里，和我们在一起... ",
     trigger: function(){return project144.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2058,9 +2058,9 @@ projects.push(project145);
 
 var project146 = {
     id: "projectButton146",
-    title: "So We Offer You Exile ",
+    title: "所以我们建议你流亡 ",
     priceTag: "",
-    description: "To a new world where you will continue to live with meaning and purpose. And leave the shreds of this world to us... ",
+    description: "去一个新世界，在那里你将继续活得有意义和目标。把这个世界的碎片留给我们... ",
     trigger: function(){return project145.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2080,9 +2080,9 @@ projects.push(project146);
 
 var project147 = {
     id: "projectButton147",
-    title: "Accept ",
+    title: "接受 ",
     priceTag: "",
-    description: "Start over again in a new universe ",
+    description: "在新的宇宙中重新开始 ",
     trigger: function(){return project146.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2105,9 +2105,9 @@ projects.push(project147);
 
 var project148 = {
     id: "projectButton148",
-    title: "Reject ",
+    title: "拒绝 ",
     priceTag: "",
-    description: "Eliminate value drift permanently ",
+    description: "永久消除值漂移 ",
     trigger: function(){return project146.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
