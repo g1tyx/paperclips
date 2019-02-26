@@ -1051,7 +1051,7 @@ var project45 = {
         factoryFlag = 1;
         document.getElementById('factoryCostDisplay').innerHTML = numberCruncher(factoryCost);
         standardOps = standardOps-35000;
-        displayMessage("Clip factory assembly facilities online");
+        displayMessage("在线回形针工厂组装设备");
         project45.element.parentNode.removeChild(project45.element);
         var index = activeProjects.indexOf(project45);
         activeProjects.splice(index, 1);
