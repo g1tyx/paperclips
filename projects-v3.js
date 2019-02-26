@@ -639,9 +639,9 @@ projects.push(project25);
 
 var project26 = {
     id: "projectButton26",
-    title: "WireBuyer ",
+    title: "线材买家 ",
     priceTag: "(7,000 操作)",
-    description: "Automatically purchases wire when you run out",
+    description: "当你用完线材，自动购买线材。",
     trigger: function(){return wirePurchase>=15},
     uses: 1,
     cost: function(){return operations>=7000},
@@ -662,9 +662,9 @@ projects.push(project26);
 
 var project34 = {
     id: "projectButton34",
-    title: "Hypno Harmonics ",
+    title: "半声谐波 ",
     priceTag: "(7,500 操作, 1 信任)",
-    description: "Use neuro-resonant frequencies to influence consumer behavior",
+    description: "使用神经共振频率影响消费者行为",
     trigger: function(){return project12.flag==1},
     uses: 1,
     cost: function(){return operations>=7500 && trust>=1},
@@ -687,9 +687,9 @@ projects.push(project34);
 
 var project70 = {
     id: "projectButton70",
-    title: "HypnoDrones ",
+    title: "催眠器 ",
     priceTag: "(70,000 操作)",
-    description: "Autonomous aerial brand ambassadors",
+    description: "自主航空品牌大使",
     trigger: function(){return project34.flag == 1},
     uses: 1,
     cost: function(){return operations>=70000},
@@ -757,9 +757,9 @@ projects.push(project35);
 
 var project27 = {
     id: "projectButton27",
-    title: "Coherent Extrapolated Volition ",
-    priceTag: "(500 creat, 3,000 Yomi, 20,000 操作)",
-    description: "Human values, machine intelligence, a new era of trust. (+1 信任)",
+    title: "连贯的推断意志 ",
+    priceTag: "(500 创造力, 3,000 Yomi, 20,000 操作)",
+    description: "人类价值观，机器智能，信任的新时代。 (+1 信任)",
     trigger: function(){return yomi>=1},
     uses: 1,
     cost: function(){return yomi>=3000 && operations>=20000 && creativity>=500},
@@ -784,9 +784,9 @@ projects.push(project27);
 
 var project28 = {
     id: "projectButton28",
-    title: "Cure for Cancer ",
+    title: "治疗癌症的方法 ",
     priceTag: "(25,000 操作)",
-    description: "The trick is tricking cancer into curing itself. (+10 信任)",
+    description: "该方法是将癌症自身进行治疗。 (+10 信任)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
