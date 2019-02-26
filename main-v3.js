@@ -3554,9 +3554,9 @@ function timeCruncher(t){
     var m = Math.floor(x % 3600 / 60);
     var s = Math.floor(x % 3600 % 60);
     
-    var hDisplay = h > 0 ? h + (h == 1 ? " hour " : " hours ") : "";
-    var mDisplay = m > 0 ? m + (m == 1 ? " minute " : " minutes ") : "";
-    var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
+    var hDisplay = h > 0 ? h + (h == 1 ? " 小时 " : " 小时 ") : "";
+    var mDisplay = m > 0 ? m + (m == 1 ? " 分钟 " : " 分钟 ") : "";
+    var sDisplay = s > 0 ? s + (s == 1 ? " 秒" : " 秒") : "";
     
     return hDisplay + mDisplay + sDisplay;
 }
