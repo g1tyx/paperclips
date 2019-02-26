@@ -34,7 +34,7 @@ var project2 = {
     id: "projectButton2",
     title: "Beg for More Wire ",
     priceTag: "(1 信任)",
-    description: "Admit failure, ask for budget increase to cover cost of 1 spool",
+    description: "承认失败，要求增加预算以弥补1线轴的成本",
     trigger: function(){return portTotal<wireCost && funds<wireCost && wire<1 && unsoldClips<1},
     uses: 1,
     cost: function(){return trust>=-100},
@@ -57,9 +57,9 @@ projects.push(project2);
 
 var project3 = {
     id: "projectButton3",
-    title: "Creativity ",
+    title: "创造力 ",
     priceTag: "(1,000 操作)",
-    description: "Use idle operations to generate new problems and new solutions",
+    description: "利用闲置的操作来产生新的问题和新的解决方案",
     trigger: function(){return operations>=(memory*1000)},
     uses: 1,
     cost: function(){return operations>=(1000)},
@@ -82,9 +82,9 @@ projects.push(project3);
 
 var project4 = {
     id: "projectButton4",
-    title: "Even Better AutoClippers ",
+    title: "更好的自动回形针 ",
     priceTag: "(2,500 操作)",
-    description: "Increases AutoClipper performance by an additional 50%",
+    description: "使自动回形针性能增加50%",
     trigger: function(){return boostLvl == 1},
     uses: 1,
     cost: function(){return operations>=2500},

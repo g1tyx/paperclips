@@ -2001,7 +2001,7 @@ function newTourney(){
     btnRunTournamentElement.disabled = false;
     vertStratElement.innerHTML = "&nbsp";
     horizStratElement.innerHTML = "&nbsp";
-    tourneyDisplayElement.innerHTML = "Pick strategy, run tournament, gain yomi";
+    tourneyDisplayElement.innerHTML = "选择策略，运行比赛，获得yomi";
     
     
 }
@@ -2272,7 +2272,7 @@ function round(roundNum){
     function roundSetup(){
         rCounter = 0;
         pickStrats(roundNum);
-        var $ = ("Round "+(roundNum+1));
+        var $ = ("回合 "+(roundNum+1));
         tourneyReport($); 
     }
     

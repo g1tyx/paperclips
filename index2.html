@@ -668,22 +668,22 @@
             
         <div id = "tourneyButton">    
         <button class = "button2" id = "btnNewTournament"
-        onclick="newTourney()"> &nbsp New Tournament &nbsp </button>
+        onclick="newTourney()"> &nbsp 新的比赛 &nbsp </button>
         </div>
             
         <div id = "autoTourneyControl">
         <button class = "button2" id ="btnToggleAutoTourney"
-        onclick="toggleAutoTourney()">AutoTourney</button>
+        onclick="toggleAutoTourney()">自动比赛</button>
         </div>  
             
         <div id = autoTourneyStatusDiv>
-        <span class = "engineText9" id = "autoTourneyStatus">ON</span>
+        <span class = "engineText9" id = "autoTourneyStatus">开启</span>
         </div>        
        
         
             
         <br />    
-        <p class = "engineText8">成本: <span id="newTourneyCost">1,000</span> ops</p>  
+        <p class = "engineText8">成本: <span id="newTourneyCost">1,000</span> 操作</p>  
         </div> 
             
 <!--       BATTLE-->            
@@ -695,13 +695,13 @@
     
         <p class="clean2">
 
-            <span id="battleName">Drifter Attack 1</span></p><br />
+            <span id="battleName">流浪汉袭击 1</span></p><br />
             
         <div id = "victoryDiv">
            
-        <span id="battleResult">VICTORY</span>
+        <span id="battleResult">胜利</span>
         <p class="clean2">    
-        <span id="battleResultSign">+</span><span id="honorAmount">200</span> honor
+        <span id="battleResultSign">+</span><span id="honorAmount">200</span> 荣誉
         </p>    
             
         </div>   
@@ -714,26 +714,26 @@
         </div>
             
         <div id = "honorDiv">
-        <p class="engineText4">Honor: <span id="honorDisplay">0</span></p>
+        <p class="engineText4">荣誉: <span id="honorDisplay">0</span></p>
         </div>    
             
 <!--        POWER-->
         
         <div id="powerDiv">
-        <b>Power</b>
+        <b>力量</b>
         <hr>    
-        Factory/Drone Performance: <span id="performance">0</span>%<br />
+        工厂/无人机性能: <span id="performance">0</span>%<br />
         <br />    
-        Consumption: <span id="powerConsumptionRate">0</span> MWs<br /> 
+        消耗: <span id="powerConsumptionRate">0</span> MWs<br /> 
         <p class = "clean">    
-        Factories: <span id="facPowConRate">0</span> MWs<br />
-        Drones: <span id="dronePowConRate">0</span> MWs<br /> 
+        工厂: <span id="facPowConRate">0</span> MWs<br />
+        无人机: <span id="dronePowConRate">0</span> MWs<br /> 
         </p> <br />    
               
         Production: <span id="powerProductionRate">0</span> MWs<br />    
         <p class = "engineText5">
         <button class = "button2" id = "btnMakeFarm"
-        onclick="makeFarm(1)">Solar Farm</button> <span class = "engineText6" id="farmLevel">0</span></p>
+        onclick="makeFarm(1)">太阳能农场</button> <span class = "engineText6" id="farmLevel">0</span></p>
             
         <div id = "farmMultiButtons">    
             
@@ -747,19 +747,19 @@
             
         <span id = "farmRebootToolTip" class = "toolTipText3">0</span>    
            
-        <button class = "button2" id = "btnFarmReboot" onclick="farmReboot()">&nbsp Disassemble All &nbsp</button>
+        <button class = "button2" id = "btnFarmReboot" onclick="farmReboot()">&nbsp 全部拆卸 &nbsp</button>
             
         </div>
             
         </br> 
             
-        成本: <span id="farmCost">0</span> clips<br />
+        成本: <span id="farmCost">0</span> 回形针<br />
         <br />
             
         Storage: <span id="storedPower">0</span> / <span id="maxStorage">0</span> MW-seconds<br />
         <p class = "engineText5">
         <button class = "button2" id = "btnMakeBattery"
-        onclick="makeBattery(1)">Battery Tower</button> <span class = "engineText6" id="batteryLevel">0</span></p>
+        onclick="makeBattery(1)">电池塔</button> <span class = "engineText6" id="batteryLevel">0</span></p>
             
             
         <div id = "batteryMultiButtons">    
@@ -774,7 +774,7 @@
             
         <span id = "batteryRebootToolTip" class = "toolTipText3">0</span>    
             
-        <button class = "button2" id = "btnBatteryReboot" onclick="batteryReboot()">&nbsp Disassemble All &nbsp</button>
+        <button class = "button2" id = "btnBatteryReboot" onclick="batteryReboot()">&nbsp 全部拆卸 &nbsp</button>
             
         </div>    
         
@@ -792,10 +792,10 @@
             
         <p class=engineText>
             
-            <b>Von Neumann Probe Design</b><br />
-        Trust:
+            <b>冯诺依曼探针设计</b><br />
+        信任:
         <span id="probeTrustUsedDisplay">0</span> / <span id="probeTrustDisplay">0</span>
-        (<span id="maxTrustDisplay">0</span> Max)<br /> 
+        (<span id="maxTrustDisplay">0</span> 最大)<br /> 
         
         </p>
              
@@ -807,9 +807,9 @@
          
         <div class = "toolTip2">     
          
-        <span class = "toolTipText2">Modifies rate of exploration</span>  
+        <span class = "toolTipText2">修改探索率</span>  
             
-        Speed: <span id="probeSpeedDisplay">0</span>
+        速度: <span id="probeSpeedDisplay">0</span>
             
         </div><br />
             
@@ -822,9 +822,9 @@
             
         <div class = "toolTip2">     
          
-        <span class = "toolTipText2">Rate at which probes gain access to new matter</span>  
+        <span class = "toolTipText2">探针获得新事物的速率</span>  
             
-        Exploration: <span id="probeNavDisplay">0</span>
+        勘探: <span id="probeNavDisplay">0</span>
             
         </div><br />    
             
@@ -835,9 +835,9 @@
             
         <div class = "toolTip2">     
          
-        <span class = "toolTipText2">Rate at which probes generate more probes (each new probe costs 100 quadrillion clips) </span>
+        <span class = "toolTipText2">探针产生更多探针的速率（每个新探针的成本为100千万亿回形针） </span>
             
-        Self-Replication: <span id="probeRepDisplay">0</span>
+        自我复制: <span id="probeRepDisplay">0</span>
             
         </div><br />     
         
