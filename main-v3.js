@@ -5585,7 +5585,7 @@ function load() {
             strats.push(allStrats[i]);
 
             var el = document.createElement("option");
-            el.textContent = strats[i].name;
+            el.textContent = cnItem(strats[i].name);
             el.value = i;
             stratPickerElement.appendChild(el);
             
@@ -5910,7 +5910,7 @@ function load1() {
             strats.push(allStrats[i]);
 
             var el = document.createElement("option");
-            el.textContent = strats[i].name;
+            el.textContent = cnItem(strats[i].name);
             el.value = i;
             stratPickerElement.appendChild(el);
             
@@ -6215,7 +6215,7 @@ function load2() {
         
             
             var el = document.createElement("option");
-            el.textContent = strats[i].name;
+            el.textContent = cnItem(strats[i].name);
             el.value = i;
             stratPickerElement.appendChild(el);
             
