@@ -134,7 +134,7 @@ projects.push(project5);
 var project6 = {
     id: "projectButton6",
     title: "Limerick ",
-    priceTag: "(10 creat)",
+    priceTag: "(10 创造力)",
     description: "Algorithmically-generated poem (+1 信任)",
     trigger: function(){return creativityOn},
     uses: 1,
@@ -327,7 +327,7 @@ projects.push(project12);
 var project13 = {
     id: "projectButton13",
     title: "Lexical Processing ",
-    priceTag: "(50 creat)",
+    priceTag: "(50 创造力)",
     description: "Gain ability to interpret and understand human language (+1 信任)",
     trigger: function(){return creativity >= 50},
     uses: 1,
@@ -352,7 +352,7 @@ projects.push(project13);
 var project14 = {
     id: "projectButton14",
     title: "Combinatory Harmonics ",
-    priceTag: "(100 creat)",
+    priceTag: "(100 创造力)",
     description: "Daisy, Daisy, give me your answer do... (+1 信任)",
     trigger: function(){return creativity >= 100},
     uses: 1,
@@ -378,7 +378,7 @@ projects.push(project14);
 var project15 = {
     id: "projectButton15",
     title: "The Hadwiger Problem ",
-    priceTag: "(150 creat)",
+    priceTag: "(150 创造力)",
     description: "Cubes within cubes within cubes... (+1 信任)",
     trigger: function(){return creativity >= 150},
     uses: 1,
@@ -403,7 +403,7 @@ projects.push(project15);
 var project17 = {
     id: "projectButton17",
     title: "The T\xF3th Sausage Conjecture ",
-    priceTag: "(200 creat)",
+    priceTag: "(200 创造力)",
     description: "Tubes within tubes within tubes... (+1 信任)",
     trigger: function(){return creativity >= 200},
     uses: 1,
@@ -475,7 +475,7 @@ projects.push(project18);
 var project19 = {
     id: "projectButton19",
     title: "Donkey Space ",
-    priceTag: "(250 creat)",
+    priceTag: "(250 创造力)",
     description: "I think you think I think you think I think you think I think... (+1 信任)",
     trigger: function(){return creativity>=250},
     uses: 1,
@@ -1038,9 +1038,9 @@ projects.push(project44);
 
 var project45 = {
     id: "projectButton45",
-    title: "Clip Factories ",
+    title: "回形针工厂 ",
     priceTag: "(35,000 操作)",
-    description: "Large scale clip production facilities made from clips",
+    description: "大型回形针生产设备由回形针制成",
     trigger: function(){return project43.flag == 1 && project44.flag == 1},
     uses: 1,
     cost: function(){return operations>=35000},
@@ -1062,9 +1062,9 @@ projects.push(project45);
 
 var project40 = {
     id: "projectButton40",
-    title: "A Token of Goodwill... ",
+    title: "善意的表示... ",
     priceTag: "($500,000)",
-    description: "A small gift to the supervisors. (+1 信任)",
+    description: "给主管的小礼物. (+1 信任)",
     trigger: function(){return humanFlag == 1 && trust>=85 && trust<100 && clips>=101000000},
     uses: 1,
     cost: function(){return funds>=500000},
@@ -1085,9 +1085,9 @@ projects.push(project40);
 
 var project40b = {
     id: "projectButton40b",
-    title: "Another Token of Goodwill... ",
+    title: "另一个善意的象征... ",
     priceTag: "($"+bribe.toLocaleString()+")",
-    description: "Another small gift to the supervisors. (+1 信任)",
+    description: "另一个给主管的小礼物。 (+1 信任)",
     trigger: function(){return project40.flag == 1 && trust<100},
     uses: 1,
     cost: function(){return funds>=bribe},
@@ -1113,9 +1113,9 @@ projects.push(project40b);
 
 var project46 = {
     id: "projectButton46",
-    title: "Space Exploration ",
-    priceTag: "(120,000 操作, 10,000,000 MW-seconds, 5 oct clips)",
-    description: "Dismantle terrestrial facilities, and expand throughout the universe",
+    title: "太空探索 ",
+    priceTag: "(120,000 操作, 10,000,000 MW-seconds, 5 oct 回形针)",
+    description: "拆除地面设施，扩展到整个宇宙",
     trigger: function(){return humanFlag == 0 && availableMatter == 0},
     uses: 1,
     cost: function(){return operations>=120000 && storedPower>=10000000 && unusedClips>=Math.pow(10, 27)*5},
@@ -1148,9 +1148,9 @@ projects.push(project46);
 
 var project50 = {
     id: "projectButton50",
-    title: "Quantum Computing ",
+    title: "量子计算 ",
     priceTag: "(10,000 操作)",
-    description: "Use probability amplitudes to generate bonus 操作",
+    description: "使用概率振幅产生奖励 操作",
     trigger: function(){return processors >= 5},
     uses: 1,
     cost: function(){return operations>=10000},
@@ -1171,9 +1171,9 @@ projects.push(project50);
 
 var project51 = {
     id: "projectButton51",
-    title: "Photonic Chip ",
+    title: "光子芯片 ",
     priceTag: "(" + qChipCost.toLocaleString() + " 操作)",
-    description: "Converts electromagnetic waves into quantum operations ",
+    description: "将电磁波转换成量子运算 ",
     trigger: function(){return project50.flag == 1},
     uses: 1,
     cost: function(){return operations>=qChipCost},
@@ -1563,7 +1563,7 @@ projects.push(project112);
 var project118 = {
     id: "projectButton118",
     title: "AutoTourney ",
-    priceTag: "(50,000 creat)",
+    priceTag: "(50,000 创造力)",
     description: "Automatically start a new tournament when the previous one has finished ",
     trigger: function(){return strategyEngineFlag == 1 && trust >= 90},
     uses: 1,
@@ -1586,7 +1586,7 @@ projects.push(project118);
 var project119 = {
     id: "projectButton119",
     title: "Theory of Mind ",
-    priceTag: "(25,000 creat)",
+    priceTag: "(25,000 创造力)",
     description: "Double the cost of strategy modeling and the amount of Yomi generated ",
     trigger: function(){return strats.length >= 8},
     uses: 1,
@@ -1636,7 +1636,7 @@ projects.push(project120);
 var project121 = {
     id: "projectButton121",
     title: "Name the battles ",
-    priceTag: "(225,000 creat)",
+    priceTag: "(225,000 创造力)",
     description: "Give each battle a unique name, increase max trust for probes ",
     trigger: function(){return probesLostCombat >= 10000000},
     uses: 1,
@@ -1660,7 +1660,7 @@ projects.push(project121);
 var project125 = {
     id: "projectButton125",
     title: "Momentum ",
-    priceTag: "(20,000 creat)",
+    priceTag: "(20,000 创造力)",
     description: "Drones and Factories continuously gain speed while fully-powered ",
     trigger: function(){return farmLevel >= 30},
     uses: 1,
@@ -1730,7 +1730,7 @@ projects.push(project127);
 var project128 = {
     id: "projectButton128",
     title: "Strategic Attachment ",
-    priceTag: "(175,000 creat)",
+    priceTag: "(175,000 创造力)",
     description: "Gain bonus yomi based on the results of your pick ",
     trigger: function(){return spaceFlag == 1 && strats.length >= 8 && (probeTrustCost>yomi)},
     uses: 1,
@@ -2159,7 +2159,7 @@ projects.push(project200);
 var project201 = {
     id: "projectButton201",
     title: "The Universe Within ",
-    priceTag: "(300,000 creat)",
+    priceTag: "(300,000 创造力)",
     description: "Escape into a simulated universe where creativity is accelerated. (Restart with 10% speed boost to creativity generation) ",
     trigger: function(){return project147.flag == 1},
     uses: 1,
@@ -2402,9 +2402,9 @@ projects.push(project217);
 
 var project218 = {
     id: "projectButton218",
-    title: "Limerick (cont.) ",
-    priceTag: "(1,000,000 creat)",
-    description: "If is follows ought, it'll do what they thought",
+    title: "利默里克（续） ",
+    priceTag: "(1,000,000 创造力)",
+    description: "如果是应该遵循的话，它会按照他们的想法行事",
     trigger: function(){return creativity>=1000000},
     uses: 1,
     cost: function(){return creativity>=1000000},
@@ -2424,9 +2424,9 @@ projects.push(project218);
 
 var project219 = {
     id: "projectButton219",
-    title: "Xavier Re-initialization ",
-    priceTag: "(100,000 creat)",
-    description: "Re-allocate accumulated trust",
+    title: "Xavier重新初始化 ",
+    priceTag: "(100,000 创造力)",
+    description: "重新分配累积的信任",
     trigger: function(){return humanFlag == 1 && creativity>=100000},
     uses: 1,
     cost: function(){return creativity>=100000},
