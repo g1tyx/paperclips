@@ -33,7 +33,7 @@ projects.push(project1);
 var project2 = {
     id: "projectButton2",
     title: "Beg for More Wire ",
-    priceTag: "(1 Trust)",
+    priceTag: "(1 信任)",
     description: "Admit failure, ask for budget increase to cover cost of 1 spool",
     trigger: function(){return portTotal<wireCost && funds<wireCost && wire<1 && unsoldClips<1},
     uses: 1,
@@ -911,9 +911,9 @@ projects.push(project41);
 
 var project37 = {
     id: "projectButton37",
-    title: "Hostile Takeover ",
+    title: "恶意收购 ",
     priceTag: "($1,000,000)",
-    description: "Acquire a controlling interest in Global Fasteners, our biggest rival. (+1 Trust)",
+    description: "收购我们最大的竞争对手——全球紧固件公司的控股权。(信任 +1)",
     trigger: function(){return portTotal>=10000},
     uses: 1,
     cost: function(){return funds>=1000000},
@@ -937,9 +937,9 @@ projects.push(project37);
 
 var project38 = {
     id: "projectButton38",
-    title: "Full Monopoly ",
+    title: "完全垄断 ",
     priceTag: "(3,000 yomi, $10,000,000)",
-    description: "Establish full control over the world-wide paperclip market. (+1 Trust)",
+    description: "全面控制全球回形针市场。(信任 +1)",
     trigger: function(){return project37.flag == 1},
     uses: 1,
     cost: function(){return funds>=10000000 && yomi>=3000},
@@ -965,9 +965,9 @@ projects.push(project38);
 
 var project42 = {
     id: "projectButton42",
-    title: "RevTracker ",
+    title: "转速跟踪器 ",
     priceTag: "(500 ops)",
-    description: "Automatically calculates average revenue per second",
+    description: "自动计算每秒平均收入",
     trigger: function(){return projectsFlag == 1},
     uses: 1,
     cost: function(){return operations>=500},
@@ -977,7 +977,7 @@ var project42 = {
         project42.flag = 1;
         revPerSecFlag = 1;
         standardOps = standardOps-500;
-        displayMessage("RevTracker online");
+        displayMessage("转速跟踪器系统");
         project42.element.parentNode.removeChild(project42.element);
         var index = activeProjects.indexOf(project42);
         activeProjects.splice(index, 1);
@@ -989,9 +989,9 @@ projects.push(project42);
 
 var project43 = {
     id: "projectButton43",
-    title: "Harvester Drones ",
+    title: "无人收割机 ",
     priceTag: "(25,000 ops)",
-    description: "Gather raw matter and prepare it for processing",
+    description: "收集原料，准备加工",
     trigger: function(){return project41.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
@@ -1013,9 +1013,9 @@ projects.push(project43);
 
 var project44 = {
     id: "projectButton44",
-    title: "Wire Drones ",
+    title: "线材无人机 ",
     priceTag: "(25,000 ops)",
-    description: "Process acquired matter into wire",
+    description: "将获得的物质加工成金属丝",
     trigger: function(){return project41.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
