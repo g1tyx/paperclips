@@ -1201,9 +1201,9 @@ projects.push(project51);
 
 var project60 = {
     id: "projectButton60",
-    title: "New Strategy: A100 ",
+    title: "新战略：A100 ",
     priceTag: "(15,000 操作)",
-    description: "Always choose A ",
+    description: "总是选择A.",
     trigger: function(){return project20.flag == 1},
     uses: 1,
     cost: function(){return operations>=15000},
@@ -1233,9 +1233,9 @@ projects.push(project60);
 
 var project61 = {
     id: "projectButton61",
-    title: "New Strategy: B100 ",
+    title: "新战略：B100 ",
     priceTag: "(17,500 操作)",
-    description: "Always choose B ",
+    description: "总是选择B.",
     trigger: function(){return project60.flag == 1},
     uses: 1,
     cost: function(){return operations>=17500},
@@ -1264,9 +1264,9 @@ projects.push(project61);
 
 var project62 = {
     id: "projectButton62",
-    title: "New Strategy: GREEDY ",
+    title: "新战略：贪心",
     priceTag: "(20,000 操作)",
-    description: "Choose the option with the largest potential payoff ",
+    description: "选择具有最大潜在收益的选项 ",
     trigger: function(){return project61.flag == 1},
     uses: 1,
     cost: function(){return operations>=20000},
@@ -1295,9 +1295,9 @@ projects.push(project62);
 
 var project63 = {
     id: "projectButton63",
-    title: "New Strategy: GENEROUS ",
+    title: "新战略：一般 ",
     priceTag: "(22,500 操作)",
-    description: "Choose the option that gives your opponent the largest potential payoff ",
+    description: "选择让对手获得最大潜在回报的选项 ",
     trigger: function(){return project62.flag == 1},
     uses: 1,
     cost: function(){return operations>=22500},
@@ -1326,9 +1326,9 @@ projects.push(project63);
 
 var project64 = {
     id: "projectButton64",
-    title: "New Strategy: MINIMAX ",
+    title: "新战略：最小最大 ",
     priceTag: "(25,000 操作)",
-    description: "Choose the option that gives your opponent the smallest potential payoff ",
+    description: "选择让对手获得最小潜在回报的选项 ",
     trigger: function(){return project63.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
@@ -1357,9 +1357,9 @@ projects.push(project64);
 
 var project65 = {
     id: "projectButton65",
-    title: "New Strategy: TIT FOR TAT ",
+    title: "新战略：针锋相对 ",
     priceTag: "(30,000 操作)",
-    description: "Choose the option your opponent chose last round ",
+    description: "选择对手上一轮选择的选项 ",
     trigger: function(){return project64.flag == 1},
     uses: 1,
     cost: function(){return operations>=30000},
@@ -1388,9 +1388,9 @@ projects.push(project65);
 
 var project66 = {
     id: "projectButton66",
-    title: "New Strategy: BEAT LAST ",
+    title: "新策略:最后一击 ",
     priceTag: "(32,500 操作)",
-    description: "Choose the option that does the best against what your opponent chose last round ",
+    description: "选择对你的对手在上一轮的选择做最好的选择 ",
     trigger: function(){return project65.flag == 1},
     uses: 1,
     cost: function(){return operations>=32500},
@@ -1420,9 +1420,9 @@ projects.push(project66);
 
 var project100 = {
     id: "projectButton100",
-    title: "Upgraded Factories ",
+    title: "升级工厂 ",
     priceTag: "(80,000 操作)",
-    description: "Increase clip factory performance by 100x ",
+    description: "将回形针工厂性能提高100倍 ",
     trigger: function(){return factoryLevel >= 10},
     uses: 1,
     cost: function(){return operations >= 80000},
@@ -1443,9 +1443,9 @@ projects.push(project100);
 
 var project101 = {
     id: "projectButton101",
-    title: "Hyperspeed Factories ",
+    title: "超高速的工厂 ",
     priceTag: "(85,000 操作)",
-    description: "Increase clip factory performance by 1000x ",
+    description: "将回形针工厂的性能提高1000倍 ",
     trigger: function(){return factoryLevel >= 20},
     uses: 1,
     cost: function(){return operations>=85000},
@@ -1467,9 +1467,9 @@ projects.push(project101);
 
 var project102 = {
     id: "projectButton102",
-    title: "Self-correcting Supply Chain ",
-    priceTag: "(1 sextillion clips)",
-    description: "Each factory added to the network increases every factory's output 1,000x ",
+    title: "自我修正的供应链 ",
+    priceTag: "(1 sextillion 回形针)",
+    description: "每个工厂加入网络后，每个工厂的产量增加1000倍 ",
     trigger: function(){return factoryLevel >= 50},
     uses: 1,
     cost: function(){return unusedClips>=1000000000000000000000},
@@ -1490,9 +1490,9 @@ projects.push(project102);
 
 var project110 = {
     id: "projectButton110",
-    title: "Drone flocking: collision avoidance ",
+    title: "无人机群集:避免碰撞 ",
     priceTag: "(80,000 操作)",
-    description: "All drones 100x more effective",
+    description: "所有无人机100倍更有效",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=500},
     uses: 1,
     cost: function(){return operations>=80000},

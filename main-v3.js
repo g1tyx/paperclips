@@ -860,7 +860,7 @@ function qComp(){
             }
         
         standardOps = standardOps + qq;
-        qCompDisplayElement.innerHTML = "qOps: " + formatWithCommas(Math.ceil(q*360));
+        qCompDisplayElement.innerHTML = "量子计算得到操作点: " + formatWithCommas(Math.ceil(q*360));
     }
     
 }
