@@ -32,7 +32,7 @@ projects.push(project1);
 
 var project2 = {
     id: "projectButton2",
-    title: "Beg for More Wire ",
+    title: "乞求更多的线材 ",
     priceTag: "(1 信任)",
     description: "承认失败，要求增加预算以弥补1线轴的成本",
     trigger: function(){return portTotal<wireCost && funds<wireCost && wire<1 && unsoldClips<1},
@@ -107,9 +107,9 @@ projects.push(project4);
 
 var project5 = {
     id: "projectButton5",
-    title: "Optimized AutoClippers ",
+    title: "优化的自动回形针 ",
     priceTag: "(5,000 操作)",
-    description: "Increases AutoClipper performance by an additional 75%",
+    description: "增加75%的自动回形针性能",
     trigger: function(){return boostLvl == 2},
     uses: 1,
     cost: function(){return operations>=5000},
@@ -133,9 +133,9 @@ projects.push(project5);
 
 var project6 = {
     id: "projectButton6",
-    title: "Limerick ",
+    title: "利默里克 ",
     priceTag: "(10 创造力)",
-    description: "Algorithmically-generated poem (+1 信任)",
+    description: "通过算法产生的诗 (+1 信任)",
     trigger: function(){return creativityOn},
     uses: 1,
     cost: function(){return creativity >= 10},
@@ -157,9 +157,9 @@ projects.push(project6);
 
 var project7 = {
     id: "projectButton7",
-    title: "Improved Wire Extrusion ",
+    title: "改良线材挤压 ",
     priceTag: "(1,750 操作)",
-    description: "50% more wire supply from every spool",
+    description: "每个线轴增加50%的线材供应",
     trigger: function(){return wirePurchase >= 1},
     uses: 1,
     cost: function(){return operations>=1750},
@@ -181,9 +181,9 @@ projects.push(project7);
 
 var project8 = {
     id: "projectButton8",
-    title: "Optimized Wire Extrusion ",
+    title: "优化线材挤压 ",
     priceTag: "(3,500 操作)",
-    description: "75% more wire supply from every spool",
+    description: "每个线轴增加75%的线材供应",
     trigger: function(){return wireSupply >= 1500},
     uses: 1,
     cost: function(){return operations>=3500},
@@ -205,9 +205,9 @@ projects.push(project8);
 
 var project9 = {
     id: "projectButton9",
-    title: "Microlattice Shapecasting ",
+    title: "微点阵形状铸造 ",
     priceTag: "(7,500 操作)",
-    description: "100% more wire supply from every spool",
+    description: "从每个线轴增加100%的线材供应",
     trigger: function(){return wireSupply >= 2600},
     uses: 1,
     cost: function(){return operations>=7500},
@@ -229,9 +229,9 @@ projects.push(project9);
 
 var project10 = {
     id: "projectButton10",
-    title: "Spectral Froth Annealment ",
+    title: "光谱泡沫退火 ",
     priceTag: "(12,000 操作)",
-    description: "200% more wire supply from every spool",
+    description: "每个线轴增加200%的线材供应",
     trigger: function(){return wireSupply >= 5000},
     uses: 1,
     cost: function(){return operations>=12000},
@@ -252,9 +252,9 @@ projects.push(project10);
 
 var project10b = {
     id: "projectButton10b",
-    title: "Quantum Foam Annealment ",
+    title: "量子泡沫退火 ",
     priceTag: "(15,000 操作)",
-    description: "1,000% more wire supply from every spool",
+    description: "每个线轴增加1000%的线材供应",
     trigger: function(){return wireCost >= 125},
     uses: 1,
     cost: function(){return operations>=15000},
@@ -276,9 +276,9 @@ projects.push(project10b);
 
 var project11 = {
     id: "projectButton11",
-    title: "New Slogan ",
+    title: "新的口号 ",
     priceTag: "(25 creat, 2,500 操作)",
-    description: "Improve marketing effectiveness by 50%",
+    description: "提高50%的营销效果",
     trigger: function(){return project13.flag == 1},
     uses: 1,
     cost: function(){return operations>=2500 && creativity>=25},
@@ -616,9 +616,9 @@ projects.push(project24);
 
 var project25 = {
     id: "projectButton25",
-    title: "Optimized MegaClippers ",
+    title: "优化的巨型回形针 ",
     priceTag: "(19,500 操作)",
-    description: "Increases MegaClipper performance by an additional 100%",
+    description: "增加巨型回形针 100%的性能",
     trigger: function(){return project24.flag == 1},
     uses: 1,
     cost: function(){return operations>=19500},
