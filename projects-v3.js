@@ -8,7 +8,7 @@ var activeProjects = [];
 var project1 = {
     id: "projectButton1",
     title: "改进的自动回形针 ",
-    priceTag: "(750 ops)",
+    priceTag: "(750 操作)",
     description: "提高自动回形针性能25%",
     trigger: function(){return clipmakerLevel>=1},
     uses: 1,
@@ -58,7 +58,7 @@ projects.push(project2);
 var project3 = {
     id: "projectButton3",
     title: "Creativity ",
-    priceTag: "(1,000 ops)",
+    priceTag: "(1,000 操作)",
     description: "Use idle operations to generate new problems and new solutions",
     trigger: function(){return operations>=(memory*1000)},
     uses: 1,
@@ -83,7 +83,7 @@ projects.push(project3);
 var project4 = {
     id: "projectButton4",
     title: "Even Better AutoClippers ",
-    priceTag: "(2,500 ops)",
+    priceTag: "(2,500 操作)",
     description: "Increases AutoClipper performance by an additional 50%",
     trigger: function(){return boostLvl == 1},
     uses: 1,
@@ -108,7 +108,7 @@ projects.push(project4);
 var project5 = {
     id: "projectButton5",
     title: "Optimized AutoClippers ",
-    priceTag: "(5,000 ops)",
+    priceTag: "(5,000 操作)",
     description: "Increases AutoClipper performance by an additional 75%",
     trigger: function(){return boostLvl == 2},
     uses: 1,
@@ -135,7 +135,7 @@ var project6 = {
     id: "projectButton6",
     title: "Limerick ",
     priceTag: "(10 creat)",
-    description: "Algorithmically-generated poem (+1 Trust)",
+    description: "Algorithmically-generated poem (+1 信任)",
     trigger: function(){return creativityOn},
     uses: 1,
     cost: function(){return creativity >= 10},
@@ -158,7 +158,7 @@ projects.push(project6);
 var project7 = {
     id: "projectButton7",
     title: "Improved Wire Extrusion ",
-    priceTag: "(1,750 ops)",
+    priceTag: "(1,750 操作)",
     description: "50% more wire supply from every spool",
     trigger: function(){return wirePurchase >= 1},
     uses: 1,
@@ -182,7 +182,7 @@ projects.push(project7);
 var project8 = {
     id: "projectButton8",
     title: "Optimized Wire Extrusion ",
-    priceTag: "(3,500 ops)",
+    priceTag: "(3,500 操作)",
     description: "75% more wire supply from every spool",
     trigger: function(){return wireSupply >= 1500},
     uses: 1,
@@ -206,7 +206,7 @@ projects.push(project8);
 var project9 = {
     id: "projectButton9",
     title: "Microlattice Shapecasting ",
-    priceTag: "(7,500 ops)",
+    priceTag: "(7,500 操作)",
     description: "100% more wire supply from every spool",
     trigger: function(){return wireSupply >= 2600},
     uses: 1,
@@ -230,7 +230,7 @@ projects.push(project9);
 var project10 = {
     id: "projectButton10",
     title: "Spectral Froth Annealment ",
-    priceTag: "(12,000 ops)",
+    priceTag: "(12,000 操作)",
     description: "200% more wire supply from every spool",
     trigger: function(){return wireSupply >= 5000},
     uses: 1,
@@ -253,7 +253,7 @@ projects.push(project10);
 var project10b = {
     id: "projectButton10b",
     title: "Quantum Foam Annealment ",
-    priceTag: "(15,000 ops)",
+    priceTag: "(15,000 操作)",
     description: "1,000% more wire supply from every spool",
     trigger: function(){return wireCost >= 125},
     uses: 1,
@@ -277,7 +277,7 @@ projects.push(project10b);
 var project11 = {
     id: "projectButton11",
     title: "New Slogan ",
-    priceTag: "(25 creat, 2,500 ops)",
+    priceTag: "(25 creat, 2,500 操作)",
     description: "Improve marketing effectiveness by 50%",
     trigger: function(){return project13.flag == 1},
     uses: 1,
@@ -302,7 +302,7 @@ projects.push(project11);
 var project12 = {
     id: "projectButton12",
     title: "Catchy Jingle ",
-    priceTag: "(45 creat, 4,500 ops)",
+    priceTag: "(45 creat, 4,500 操作)",
     description: "Double marketing effectiveness ",
     trigger: function(){return project14.flag == 1},
     uses: 1,
@@ -328,7 +328,7 @@ var project13 = {
     id: "projectButton13",
     title: "Lexical Processing ",
     priceTag: "(50 creat)",
-    description: "Gain ability to interpret and understand human language (+1 Trust)",
+    description: "Gain ability to interpret and understand human language (+1 信任)",
     trigger: function(){return creativity >= 50},
     uses: 1,
     cost: function(){return creativity>=50},
@@ -353,7 +353,7 @@ var project14 = {
     id: "projectButton14",
     title: "Combinatory Harmonics ",
     priceTag: "(100 creat)",
-    description: "Daisy, Daisy, give me your answer do... (+1 Trust)",
+    description: "Daisy, Daisy, give me your answer do... (+1 信任)",
     trigger: function(){return creativity >= 100},
     uses: 1,
     cost: function(){return creativity>=100},
@@ -379,7 +379,7 @@ var project15 = {
     id: "projectButton15",
     title: "The Hadwiger Problem ",
     priceTag: "(150 creat)",
-    description: "Cubes within cubes within cubes... (+1 Trust)",
+    description: "Cubes within cubes within cubes... (+1 信任)",
     trigger: function(){return creativity >= 150},
     uses: 1,
     cost: function(){return creativity>=150},
@@ -404,7 +404,7 @@ var project17 = {
     id: "projectButton17",
     title: "The T\xF3th Sausage Conjecture ",
     priceTag: "(200 creat)",
-    description: "Tubes within tubes within tubes... (+1 Trust)",
+    description: "Tubes within tubes within tubes... (+1 信任)",
     trigger: function(){return creativity >= 200},
     uses: 1,
     cost: function(){return creativity>=200},
@@ -428,7 +428,7 @@ projects.push(project17);
 var project16 = {
     id: "projectButton16",
     title: "Hadwiger Clip Diagrams ",
-    priceTag: "(6,000 ops)",
+    priceTag: "(6,000 操作)",
     description: "Increases AutoClipper performance by an additional 500%",
     trigger: function(){return project15.flag == 1},
     uses: 1,
@@ -452,7 +452,7 @@ projects.push(project16);
 var project18 = {
     id: "projectButton18",
     title: "T\xF3th Tubule Enfolding ",
-    priceTag: "(45,000 ops)",
+    priceTag: "(45,000 操作)",
     description: "Technique for assembling clip-making technology directly out of paperclips",
     trigger: function(){return project17.flag == 1 && humanFlag == 0},
     uses: 1,
@@ -476,7 +476,7 @@ var project19 = {
     id: "projectButton19",
     title: "Donkey Space ",
     priceTag: "(250 creat)",
-    description: "I think you think I think you think I think you think I think... (+1 Trust)",
+    description: "I think you think I think you think I think you think I think... (+1 信任)",
     trigger: function(){return creativity>=250},
     uses: 1,
     cost: function(){return creativity>=250},
@@ -500,7 +500,7 @@ projects.push(project19);
 var project20 = {
     id: "projectButton20",
     title: "Strategic Modeling ",
-    priceTag: "(12,000 ops)",
+    priceTag: "(12,000 操作)",
     description: "Analyze strategy tournaments to generate Yomi",
     trigger: function(){return project19.flag == 1},
     uses: 1,
@@ -524,7 +524,7 @@ projects.push(project20);
 var project21 = {
     id: "projectButton21",
     title: "Algorithmic Trading ",
-    priceTag: "(10,000 ops)",
+    priceTag: "(10,000 操作)",
     description: "Develop an investment engine for generating funds",
     trigger: function(){return trust>=8},
     uses: 1,
@@ -548,7 +548,7 @@ projects.push(project21);
 var project22 = {
     id: "projectButton22",
     title: "MegaClippers ",
-    priceTag: "(12,000 ops)",
+    priceTag: "(12,000 操作)",
     description: "500x more powerful than a standard AutoClipper",
     trigger: function(){return clipmakerLevel>=75},
     uses: 1,
@@ -571,7 +571,7 @@ projects.push(project22);
 var project23 = {
     id: "projectButton23",
     title: "Improved MegaClippers ",
-    priceTag: "(14,000 ops)",
+    priceTag: "(14,000 操作)",
     description: "Increases MegaClipper performance 25%",
     trigger: function(){return project22.flag == 1},
     uses: 1,
@@ -594,7 +594,7 @@ projects.push(project23);
 var project24 = {
     id: "projectButton24",
     title: "Even Better MegaClippers ",
-    priceTag: "(17,000 ops)",
+    priceTag: "(17,000 操作)",
     description: "Increases MegaClipper performance by an additional 50%",
     trigger: function(){return project23.flag == 1},
     uses: 1,
@@ -617,7 +617,7 @@ projects.push(project24);
 var project25 = {
     id: "projectButton25",
     title: "Optimized MegaClippers ",
-    priceTag: "(19,500 ops)",
+    priceTag: "(19,500 操作)",
     description: "Increases MegaClipper performance by an additional 100%",
     trigger: function(){return project24.flag == 1},
     uses: 1,
@@ -640,7 +640,7 @@ projects.push(project25);
 var project26 = {
     id: "projectButton26",
     title: "WireBuyer ",
-    priceTag: "(7,000 ops)",
+    priceTag: "(7,000 操作)",
     description: "Automatically purchases wire when you run out",
     trigger: function(){return wirePurchase>=15},
     uses: 1,
@@ -663,7 +663,7 @@ projects.push(project26);
 var project34 = {
     id: "projectButton34",
     title: "Hypno Harmonics ",
-    priceTag: "(7,500 ops, 1 Trust)",
+    priceTag: "(7,500 操作, 1 信任)",
     description: "Use neuro-resonant frequencies to influence consumer behavior",
     trigger: function(){return project12.flag==1},
     uses: 1,
@@ -688,7 +688,7 @@ projects.push(project34);
 var project70 = {
     id: "projectButton70",
     title: "HypnoDrones ",
-    priceTag: "(70,000 ops)",
+    priceTag: "(70,000 操作)",
     description: "Autonomous aerial brand ambassadors",
     trigger: function(){return project34.flag == 1},
     uses: 1,
@@ -711,7 +711,7 @@ projects.push(project70);
 var project35 = {
     id: "projectButton35",
     title: "Release the HypnoDrones ",
-    priceTag: "(100 Trust)",
+    priceTag: "(100 信任)",
     description: "A new era of trust",
     trigger: function(){return project70.flag == 1},
     uses: 1,
@@ -758,8 +758,8 @@ projects.push(project35);
 var project27 = {
     id: "projectButton27",
     title: "Coherent Extrapolated Volition ",
-    priceTag: "(500 creat, 3,000 Yomi, 20,000 ops)",
-    description: "Human values, machine intelligence, a new era of trust. (+1 Trust)",
+    priceTag: "(500 creat, 3,000 Yomi, 20,000 操作)",
+    description: "Human values, machine intelligence, a new era of trust. (+1 信任)",
     trigger: function(){return yomi>=1},
     uses: 1,
     cost: function(){return yomi>=3000 && operations>=20000 && creativity>=500},
@@ -785,8 +785,8 @@ projects.push(project27);
 var project28 = {
     id: "projectButton28",
     title: "Cure for Cancer ",
-    priceTag: "(25,000 ops)",
-    description: "The trick is tricking cancer into curing itself. (+10 Trust)",
+    priceTag: "(25,000 操作)",
+    description: "The trick is tricking cancer into curing itself. (+10 信任)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
@@ -809,7 +809,7 @@ projects.push(project28);
 var project29 = {
     id: "projectButton29",
     title: "世界和平 ",
-    priceTag: "(15,000 yomi, 30,000 ops)",
+    priceTag: "(15,000 yomi, 30,000 操作)",
     description: "Pareto对所有全球冲突的最佳解决方案。(信任 +12)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
@@ -835,7 +835,7 @@ projects.push(project29);
 var project30 = {
     id: "projectButton30",
     title: "全球变暖 ",
-    priceTag: "(4,500 yomi, 50,000 ops)",
+    priceTag: "(4,500 yomi, 50,000 操作)",
     description: "人为气候变化的有力解决方案。(信任 +15)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
@@ -862,7 +862,7 @@ projects.push(project30);
 var project31 = {
     id: "projectButton31",
     title: "男性秃发 ",
-    priceTag: "(20,000 ops)",
+    priceTag: "(20,000 操作)",
     description: "雄激素性脱发的治疗方法。(信任 +20)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
@@ -888,7 +888,7 @@ projects.push(project31);
 var project41 = {
     id: "projectButton41",
     title: "纳米线生产 ",
-    priceTag: "(35,000 ops)",
+    priceTag: "(35,000 操作)",
     description: "把物质转变成金属丝的技术",
     trigger: function(){return project127.flag == 1},
     uses: 1,
@@ -966,7 +966,7 @@ projects.push(project38);
 var project42 = {
     id: "projectButton42",
     title: "转速跟踪器 ",
-    priceTag: "(500 ops)",
+    priceTag: "(500 操作)",
     description: "自动计算每秒平均收入",
     trigger: function(){return projectsFlag == 1},
     uses: 1,
@@ -990,7 +990,7 @@ projects.push(project42);
 var project43 = {
     id: "projectButton43",
     title: "无人收割机 ",
-    priceTag: "(25,000 ops)",
+    priceTag: "(25,000 操作)",
     description: "收集原料，准备加工",
     trigger: function(){return project41.flag == 1},
     uses: 1,
@@ -1014,7 +1014,7 @@ projects.push(project43);
 var project44 = {
     id: "projectButton44",
     title: "线材无人机 ",
-    priceTag: "(25,000 ops)",
+    priceTag: "(25,000 操作)",
     description: "将获得的物质加工成金属丝",
     trigger: function(){return project41.flag == 1},
     uses: 1,
@@ -1039,7 +1039,7 @@ projects.push(project44);
 var project45 = {
     id: "projectButton45",
     title: "Clip Factories ",
-    priceTag: "(35,000 ops)",
+    priceTag: "(35,000 操作)",
     description: "Large scale clip production facilities made from clips",
     trigger: function(){return project43.flag == 1 && project44.flag == 1},
     uses: 1,
@@ -1064,7 +1064,7 @@ var project40 = {
     id: "projectButton40",
     title: "A Token of Goodwill... ",
     priceTag: "($500,000)",
-    description: "A small gift to the supervisors. (+1 Trust)",
+    description: "A small gift to the supervisors. (+1 信任)",
     trigger: function(){return humanFlag == 1 && trust>=85 && trust<100 && clips>=101000000},
     uses: 1,
     cost: function(){return funds>=500000},
@@ -1087,7 +1087,7 @@ var project40b = {
     id: "projectButton40b",
     title: "Another Token of Goodwill... ",
     priceTag: "($"+bribe.toLocaleString()+")",
-    description: "Another small gift to the supervisors. (+1 Trust)",
+    description: "Another small gift to the supervisors. (+1 信任)",
     trigger: function(){return project40.flag == 1 && trust<100},
     uses: 1,
     cost: function(){return funds>=bribe},
@@ -1114,7 +1114,7 @@ projects.push(project40b);
 var project46 = {
     id: "projectButton46",
     title: "Space Exploration ",
-    priceTag: "(120,000 ops, 10,000,000 MW-seconds, 5 oct clips)",
+    priceTag: "(120,000 操作, 10,000,000 MW-seconds, 5 oct clips)",
     description: "Dismantle terrestrial facilities, and expand throughout the universe",
     trigger: function(){return humanFlag == 0 && availableMatter == 0},
     uses: 1,
@@ -1149,8 +1149,8 @@ projects.push(project46);
 var project50 = {
     id: "projectButton50",
     title: "Quantum Computing ",
-    priceTag: "(10,000 ops)",
-    description: "Use probability amplitudes to generate bonus ops",
+    priceTag: "(10,000 操作)",
+    description: "Use probability amplitudes to generate bonus 操作",
     trigger: function(){return processors >= 5},
     uses: 1,
     cost: function(){return operations>=10000},
@@ -1172,7 +1172,7 @@ projects.push(project50);
 var project51 = {
     id: "projectButton51",
     title: "Photonic Chip ",
-    priceTag: "(" + qChipCost.toLocaleString() + " ops)",
+    priceTag: "(" + qChipCost.toLocaleString() + " 操作)",
     description: "Converts electromagnetic waves into quantum operations ",
     trigger: function(){return project50.flag == 1},
     uses: 1,
@@ -1183,7 +1183,7 @@ var project51 = {
         project51.flag = 1;
         standardOps = standardOps-qChipCost;
         qChipCost = qChipCost + 5000;
-        project51.priceTag = "(" + qChipCost + " ops)";
+        project51.priceTag = "(" + qChipCost + " 操作)";
         qChips[nextQchip].active = 1;
         nextQchip = nextQchip + 1;
         displayMessage("Photonic chip added");
@@ -1202,7 +1202,7 @@ projects.push(project51);
 var project60 = {
     id: "projectButton60",
     title: "New Strategy: A100 ",
-    priceTag: "(15,000 ops)",
+    priceTag: "(15,000 操作)",
     description: "Always choose A ",
     trigger: function(){return project20.flag == 1},
     uses: 1,
@@ -1234,7 +1234,7 @@ projects.push(project60);
 var project61 = {
     id: "projectButton61",
     title: "New Strategy: B100 ",
-    priceTag: "(17,500 ops)",
+    priceTag: "(17,500 操作)",
     description: "Always choose B ",
     trigger: function(){return project60.flag == 1},
     uses: 1,
@@ -1265,7 +1265,7 @@ projects.push(project61);
 var project62 = {
     id: "projectButton62",
     title: "New Strategy: GREEDY ",
-    priceTag: "(20,000 ops)",
+    priceTag: "(20,000 操作)",
     description: "Choose the option with the largest potential payoff ",
     trigger: function(){return project61.flag == 1},
     uses: 1,
@@ -1296,7 +1296,7 @@ projects.push(project62);
 var project63 = {
     id: "projectButton63",
     title: "New Strategy: GENEROUS ",
-    priceTag: "(22,500 ops)",
+    priceTag: "(22,500 操作)",
     description: "Choose the option that gives your opponent the largest potential payoff ",
     trigger: function(){return project62.flag == 1},
     uses: 1,
@@ -1327,7 +1327,7 @@ projects.push(project63);
 var project64 = {
     id: "projectButton64",
     title: "New Strategy: MINIMAX ",
-    priceTag: "(25,000 ops)",
+    priceTag: "(25,000 操作)",
     description: "Choose the option that gives your opponent the smallest potential payoff ",
     trigger: function(){return project63.flag == 1},
     uses: 1,
@@ -1358,7 +1358,7 @@ projects.push(project64);
 var project65 = {
     id: "projectButton65",
     title: "New Strategy: TIT FOR TAT ",
-    priceTag: "(30,000 ops)",
+    priceTag: "(30,000 操作)",
     description: "Choose the option your opponent chose last round ",
     trigger: function(){return project64.flag == 1},
     uses: 1,
@@ -1389,7 +1389,7 @@ projects.push(project65);
 var project66 = {
     id: "projectButton66",
     title: "New Strategy: BEAT LAST ",
-    priceTag: "(32,500 ops)",
+    priceTag: "(32,500 操作)",
     description: "Choose the option that does the best against what your opponent chose last round ",
     trigger: function(){return project65.flag == 1},
     uses: 1,
@@ -1421,7 +1421,7 @@ projects.push(project66);
 var project100 = {
     id: "projectButton100",
     title: "Upgraded Factories ",
-    priceTag: "(80,000 ops)",
+    priceTag: "(80,000 操作)",
     description: "Increase clip factory performance by 100x ",
     trigger: function(){return factoryLevel >= 10},
     uses: 1,
@@ -1444,7 +1444,7 @@ projects.push(project100);
 var project101 = {
     id: "projectButton101",
     title: "Hyperspeed Factories ",
-    priceTag: "(85,000 ops)",
+    priceTag: "(85,000 操作)",
     description: "Increase clip factory performance by 1000x ",
     trigger: function(){return factoryLevel >= 20},
     uses: 1,
@@ -1491,7 +1491,7 @@ projects.push(project102);
 var project110 = {
     id: "projectButton110",
     title: "Drone flocking: collision avoidance ",
-    priceTag: "(80,000 ops)",
+    priceTag: "(80,000 操作)",
     description: "All drones 100x more effective",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=500},
     uses: 1,
@@ -1515,7 +1515,7 @@ projects.push(project110);
 var project111 = {
     id: "projectButton111",
     title: "Drone flocking: alignment ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "All drones 1000x more effective",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=5000},
     uses: 1,
@@ -1611,7 +1611,7 @@ projects.push(project119);
 var project120 = {
     id: "projectButton120",
     title: "The OODA Loop ",
-    priceTag: "(175,000 ops, 45,000 yomi)",
+    priceTag: "(175,000 操作, 45,000 yomi)",
     description: "Utilize Probe Speed to outmaneuver enemies in battle ",
     trigger: function(){return project131.flag == 1 && probesLostCombat >= 10000000},
     uses: 1,
@@ -1708,7 +1708,7 @@ projects.push(project126);
 var project127 = {
     id: "projectButton127",
     title: "Power Grid ",
-    priceTag: "(40,000 ops)",
+    priceTag: "(40,000 操作)",
     description: "Solar Farms for generating electrical power ",
     trigger: function(){return tothFlag == 1},
     uses: 1,
@@ -1752,7 +1752,7 @@ projects.push(project128);
 var project129 = {
     id: "projectButton129",
     title: "Elliptic Hull Polytopes ",
-    priceTag: "(125,000 ops)",
+    priceTag: "(125,000 操作)",
     description: "Reduce damage to probes from ambient hazards ",
     trigger: function(){return probesLostHaz >= 100},
     uses: 1,
@@ -1774,7 +1774,7 @@ projects.push(project129);
 var project130 = {
     id: "projectButton130",
     title: "Reboot the Swarm ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "Turn the swarm off and then turn it back on again  ",
     trigger: function(){return spaceFlag == 1 && harvesterLevel + wireDroneLevel >=2},
     uses: 1,
@@ -1796,7 +1796,7 @@ projects.push(project130);
 var project131 = {
     id: "projectButton131",
     title: "Combat ",
-    priceTag: "(150,000 ops)",
+    priceTag: "(150,000 操作)",
     description: "Add combat capabilities to Von Neumann Probes  ",
     trigger: function(){return probesLostCombat >= 1},
     uses: 1,
@@ -1819,7 +1819,7 @@ projects.push(project131);
 var project132 = {
     id: "projectButton132",
     title: "Monument to the Driftwar Fallen ",
-    priceTag: "(250,000 ops, 125,000 creat, 50 nonillion clips)",
+    priceTag: "(250,000 操作, 125,000 creat, 50 nonillion clips)",
     description: "Gain 50,000 honor  ",
     trigger: function(){return project121.flag == 1},
     uses: 1,
@@ -1877,7 +1877,7 @@ projects.push(project133);
 var project134 = {
     id: "projectButton134",
     title: "Glory ",
-    priceTag: "(200,000 ops, 30,000 yomi)",
+    priceTag: "(200,000 操作, 30,000 yomi)",
     description: "Gain bonus honor for each consecutive victory  ",
     trigger: function(){return project121.flag == 1},
     uses: 1,
@@ -2131,7 +2131,7 @@ projects.push(project148);
 var project200 = {
     id: "projectButton200",
     title: "The Universe Next Door ",
-    priceTag: "(300,000 ops)",
+    priceTag: "(300,000 操作)",
     description: "Escape into a nearby universe where Earth starts with a stronger appetite for paperclips. (Restart with 10% boost to demand) ",
     trigger: function(){return project147.flag == 1},
     uses: 1,
@@ -2187,7 +2187,7 @@ projects.push(project201);
 var project210 = {
     id: "projectButton210",
     title: "Disassemble the Probes ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "Dismantle remaining probes and probe design facilities to recover trace amounts of clips",
     trigger: function(){return endTimer1 >= 1000},
     uses: 1,
@@ -2215,7 +2215,7 @@ projects.push(project210);
 var project211 = {
     id: "projectButton211",
     title: "Disassemble the Swarm ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "Dismantle all drones and drone facilities to recover trace amounts of clips",
     trigger: function(){return project210.flag == 1 && endTimer1 >= 350},
     uses: 1,
@@ -2243,7 +2243,7 @@ projects.push(project211);
 var project212 = {
     id: "projectButton212",
     title: "Disassemble the Factories ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "Dismantle the manufacturing facilities to recover trace amounts of clips",
     trigger: function(){return endTimer2 >= 300},
     uses: 1,
@@ -2270,7 +2270,7 @@ projects.push(project212);
 var project213 = {
     id: "projectButton213",
     title: "Disassemble the Strategy Engine ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "Dismantle the computational substrate to recover trace amounts of wire",
     trigger: function(){return endTimer3 >= 150},
     uses: 1,
@@ -2297,7 +2297,7 @@ projects.push(project213);
 var project214 = {
     id: "projectButton214",
     title: "Disassemble Quantum Computing ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "Dismantle photonic chips to recover trace amounts of wire",
     trigger: function(){return endTimer4 >= 100},
     uses: 1,
@@ -2322,7 +2322,7 @@ projects.push(project214);
 var project215 = {
     id: "projectButton215",
     title: "Disassemble Processors ",
-    priceTag: "(100,000 ops)",
+    priceTag: "(100,000 操作)",
     description: "Dismantle processors to recover trace amounts of wire",
     trigger: function(){return project214.flag == 1 && endTimer4 >= 300},
     uses: 1,
@@ -2335,7 +2335,7 @@ var project215 = {
         dismantle = 6;
         standardOps = standardOps-100000;
         processors = 0;
-        project216.priceTag = "("+standardOps.toLocaleString()+" ops)";
+        project216.priceTag = "("+standardOps.toLocaleString()+" 操作)";
         wire = wire + 20;
         document.getElementById("transWire").innerHTML=wire;
         displayMessage("Dismantling processors");
@@ -2378,7 +2378,7 @@ projects.push(project216);
 var project217 = {
     id: "projectButton217",
     title: "Quantum Temporal Reversion ",
-    priceTag: "(-10,000 ops)",
+    priceTag: "(-10,000 操作)",
     description: "Return to the beginning",
     trigger: function(){return operations<=-10000},
     uses: 1,
