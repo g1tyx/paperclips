@@ -1,4 +1,4 @@
-# 回形针（Paperclips）
+# 环球回形针（Universal Paperclips）
 
 汉化版：http://likexia.gitee.io/paperclips
 
