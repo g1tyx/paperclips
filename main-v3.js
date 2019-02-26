@@ -1935,8 +1935,8 @@ function pickStrats(roundNum) {
     strats[h].currentPos = 1;
     strats[v].currentPos = 2;
     
-    vertStratElement.innerHTML = vStrat.name;
-    horizStratElement.innerHTML = hStrat.name;
+    vertStratElement.innerHTML = cnItem(vStrat.name);
+    horizStratElement.innerHTML = cnItem(hStrat.name);
     
 }
 
@@ -1953,10 +1953,10 @@ function generateGrid(){
     
     var x = Math.floor(Math.random()*choiceANames.length);
     
-    vLabelaElement.innerHTML = choiceANames[x];
-    vLabelbElement.innerHTML = choiceBNames[x];
-    hLabelaElement.innerHTML = choiceANames[x];
-    hLabelbElement.innerHTML = choiceBNames[x];
+    vLabelaElement.innerHTML = cnItem(choiceANames[x]);
+    vLabelbElement.innerHTML = cnItem(choiceBNames[x]);
+    hLabelaElement.innerHTML = cnItem(choiceANames[x]);
+    hLabelbElement.innerHTML = cnItem(choiceBNames[x]);
     aaPayoffHElement.innerHTML = payoffGrid.valueAA;
     aaPayoffVElement.innerHTML = payoffGrid.valueAA;
     abPayoffHElement.innerHTML = payoffGrid.valueAB;
@@ -2121,7 +2121,7 @@ function declareWinner(){
            bB=beatBoost;  
           }        
         
-       tourneyReport("TOURNAMENT RESULTS (roll over for payoff grid)");
+       tourneyReport("比赛结果(翻到支付方格)");
        yomi = yomi + strats[pick].currentScore * yomiBoost * beatBoost;
        yomiDisplayElement.innerHTML = formatWithCommas(yomi);
         
@@ -2135,27 +2135,27 @@ function declareWinner(){
             yomi = yomi + 50000;
             
             if (milestoneFlag < 15){ 
-                displayMessage("Selected strategy won the tournament (or tied for first). +50,000 yomi");
+                displayMessage("选择的策略赢得了比赛(或并列第一)。 +50,000 yomi");
                 }
             yomiDisplayElement.innerHTML = formatWithCommas(yomi);
             
             } else if (project128.flag == 1 && placeScore == strats[pick].currentScore) {
                 yomi = yomi + 30000;
                 if (milestoneFlag < 15){ 
-                displayMessage("Selected strategy finished in (or tied for) second place. +30,000 yomi");
+                displayMessage("选择的策略完成(或并列)第二名。 +30,000 yomi");
                 }
                 yomiDisplayElement.innerHTML = formatWithCommas(yomi);
                 
             } else if (project128.flag == 1 && showScore == strats[pick].currentScore) {
                 yomi = yomi + 20000;
                 if (milestoneFlag < 15){ 
-                displayMessage("Selected strategy finished in (or tied for) third place. +20,000 yomi");
+                displayMessage("选择的策略完成(或并列)第三名。+ 20000 yomi");
                 }
                 yomiDisplayElement.innerHTML = formatWithCommas(yomi);
         
             } else {
         
-            tourneyReport("TOURNAMENT RESULTS (roll over for grid)");
+            tourneyReport("比赛结果(翻到方格)");
         
             }
     
@@ -2181,7 +2181,7 @@ function populateTourneyReport(){  //m@ make results array
     
         for(i=0; i<results.length; i++){
             
-            tourneyResultsElements[i].innerHTML=(i+1)+". "+results[i].name+": "+results[i].currentScore; 
+            tourneyResultsElements[i].innerHTML=(i+1)+". "+cnItem(results[i].name)+": "+results[i].currentScore; 
             
         if (pick<10){    
             
