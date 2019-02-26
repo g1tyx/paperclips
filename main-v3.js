@@ -712,10 +712,10 @@ function adjustWirePrice(){
 function toggleWireBuyer(){
     if (wireBuyerStatus==1){
         wireBuyerStatus=0;
-        wireBuyerStatusElement.innerHTML = "OFF";
+        wireBuyerStatusElement.innerHTML = "关闭";
     } else {
         wireBuyerStatus=1;
-        wireBuyerStatusElement.innerHTML = "ON";
+        wireBuyerStatusElement.innerHTML = "开启";
     }
 }
 
@@ -842,7 +842,7 @@ function qComp(){
     
     
     if (qChips[0].active == 0){
-        qCompDisplayElement.innerHTML = "Need Photonic Chips";   
+        qCompDisplayElement.innerHTML = "需要光子芯片";   
     } else {
     for (var i = 0; i<qChips.length; i++){
         q = q+qChips[i].value;
@@ -1032,11 +1032,11 @@ function buttonUpdate(){
         mpdsDivElement.style.display="";
     }
    
-    factoryRebootToolTipElement.innerHTML = "+" + spellf(factoryBill)+" clips";
-    havesterRebootToolTipElement.innerHTML = "+" + spellf(harvesterBill)+" clips";
-    wireDroneRebootToolTipElement.innerHTML = "+" + spellf(wireDroneBill)+" clips";   
-    farmRebootToolTipElement.innerHTML = "+" + spellf(farmBill)+" clips";
-    batteryRebootToolTipElement.innerHTML = "+" + spellf(batteryBill)+" clips";
+    factoryRebootToolTipElement.innerHTML = "+" + spellf(factoryBill)+" 回形针";
+    havesterRebootToolTipElement.innerHTML = "+" + spellf(harvesterBill)+" 回形针";
+    wireDroneRebootToolTipElement.innerHTML = "+" + spellf(wireDroneBill)+" 回形针";   
+    farmRebootToolTipElement.innerHTML = "+" + spellf(farmBill)+" 回形针";
+    batteryRebootToolTipElement.innerHTML = "+" + spellf(batteryBill)+" 回形针";
     
     
     if (swarmFlag == 1){
@@ -1971,10 +1971,10 @@ function generateGrid(){
 function toggleAutoTourney(){
     if (autoTourneyStatus==1){
         autoTourneyStatus=0;
-        autoTourneyStatusElement.innerHTML = "OFF";
+        autoTourneyStatusElement.innerHTML = "关闭";
     } else {
         autoTourneyStatus=1;
-        autoTourneyStatusElement.innerHTML = "ON";
+        autoTourneyStatusElement.innerHTML = "开启";
     }
 }
 
@@ -3105,9 +3105,9 @@ function lowerPrice(){
 function updateStats(){
     
     if (wire === 1){
-        inchSpanElement.innerHTML = "inch";
+        inchSpanElement.innerHTML = "英寸";
     } else {
-        inchSpan.innerHTML = "inches";
+        inchSpan.innerHTML = "英寸";
     }
     
     

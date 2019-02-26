@@ -314,7 +314,7 @@ function checkForBattleEnd(){
             honor = honor - battleLEFTSHIPS;
             honorCount =  1;   
             }    
-            document.getElementById("battleResult").innerHTML = "DEFEAT";
+            document.getElementById("battleResult").innerHTML = "失败";
             document.getElementById("battleResultSign").innerHTML = "-";
             document.getElementById("honorAmount").innerHTML = battleLEFTSHIPS; 
             document.getElementById("honorDisplay").innerHTML = Math.round(honor).toLocaleString();
@@ -334,7 +334,7 @@ function checkForBattleEnd(){
             honorCount =  1;  
             } 
               
-            document.getElementById("battleResult").innerHTML = "VICTORY";
+            document.getElementById("battleResult").innerHTML = "胜利";
             document.getElementById("battleResultSign").innerHTML = "+";
             document.getElementById("honorDisplay").innerHTML = Math.round(honor).toLocaleString();  
               
