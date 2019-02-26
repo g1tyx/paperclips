@@ -2764,7 +2764,7 @@ function updateSwarm(){
         giftBits = giftBits + giftBitGenerationRate;
         giftCountdown = (giftPeriod - giftBits) / giftBitGenerationRate;
 
-        swarmStatusElement.innerHTML="Active";
+        swarmStatusElement.innerHTML="激活";
         giftCountdownElement.innerHTML= timeCruncher(giftCountdown);
         giftTimerElement.style.display=""; 
         } else {
@@ -2772,14 +2772,14 @@ function updateSwarm(){
         }
     
     if (swarmStatus == 1){
-        swarmStatusElement.innerHTML="Hungry";
+        swarmStatusElement.innerHTML="饥饿";
         feedButtonDivElement.style.display="";
         } else {
         feedButtonDivElement.style.display="none";    
         }
     
      if (swarmStatus == 2){
-        swarmStatusElement.innerHTML="Confused";
+        swarmStatusElement.innerHTML="困惑";
         teachButtonDivElement.style.display="";
         } else {
         teachButtonDivElement.style.display="none";    
@@ -2787,28 +2787,28 @@ function updateSwarm(){
     
      if (swarmStatus == 3){
         swarmEntertainCostElement.innerHTML = formatWithCommas(entertainCost); 
-        swarmStatusElement.innerHTML="Bored";
+        swarmStatusElement.innerHTML="无聊";
         entertainButtonDivElement.style.display="";
         } else {
         entertainButtonDivElement.style.display="none";    
         } 
     
      if (swarmStatus == 4){
-        swarmStatusElement.innerHTML="Cold";
+        swarmStatusElement.innerHTML="寒冷";
         cladButtonDivElement.style.display="";
         } else {
         cladButtonDivElement.style.display="none";    
         }  
     
      if (swarmStatus == 5){
-        swarmStatusElement.innerHTML="Disorganized";
+        swarmStatusElement.innerHTML="紊乱";
         synchButtonDivElement.style.display="";
         } else {
         synchButtonDivElement.style.display="none";    
         }     
     
        if (swarmStatus == 6){
-        swarmStatusElement.innerHTML="Sleeping";
+        swarmStatusElement.innerHTML="睡觉";
         } 
     
        if (swarmStatus == 7){
@@ -2818,11 +2818,11 @@ function updateSwarm(){
         }    
     
         if (swarmStatus == 8){
-        swarmStatusElement.innerHTML="Lonely";
+        swarmStatusElement.innerHTML="孤独";
         }   
     
         if (swarmStatus == 9){
-        swarmStatusElement.innerHTML="NO RESPONSE...";
+        swarmStatusElement.innerHTML="无响应...";
         }  
     
 
