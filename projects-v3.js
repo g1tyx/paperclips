@@ -301,9 +301,9 @@ projects.push(project11);
 
 var project12 = {
     id: "projectButton12",
-    title: "Catchy Jingle ",
+    title: "朗朗上口 ",
     priceTag: "(45 creat, 4,500 操作)",
-    description: "Double marketing effectiveness ",
+    description: "双营销效果 ",
     trigger: function(){return project14.flag == 1},
     uses: 1,
     cost: function(){return operations>=4500 && creativity>=45},
@@ -326,9 +326,9 @@ projects.push(project12);
 
 var project13 = {
     id: "projectButton13",
-    title: "Lexical Processing ",
+    title: "词汇处理 ",
     priceTag: "(50 创造力)",
-    description: "Gain ability to interpret and understand human language (+1 信任)",
+    description: "获得理解人类语言的能力 (+1 信任)",
     trigger: function(){return creativity >= 50},
     uses: 1,
     cost: function(){return creativity>=50},
@@ -351,9 +351,9 @@ projects.push(project13);
 
 var project14 = {
     id: "projectButton14",
-    title: "Combinatory Harmonics ",
+    title: "组合谐波 ",
     priceTag: "(100 创造力)",
-    description: "Daisy, Daisy, give me your answer do... (+1 信任)",
+    description: "黛西，黛西，给我你的答案吧... (+1 信任)",
     trigger: function(){return creativity >= 100},
     uses: 1,
     cost: function(){return creativity>=100},
@@ -377,9 +377,9 @@ projects.push(project14);
 
 var project15 = {
     id: "projectButton15",
-    title: "The Hadwiger Problem ",
+    title: "哈德威的问题 ",
     priceTag: "(150 创造力)",
-    description: "Cubes within cubes within cubes... (+1 信任)",
+    description: "方块中的方块中的方块... (+1 信任)",
     trigger: function(){return creativity >= 150},
     uses: 1,
     cost: function(){return creativity>=150},
@@ -1585,9 +1585,9 @@ projects.push(project118);
 
 var project119 = {
     id: "projectButton119",
-    title: "Theory of Mind ",
+    title: "心理理论 ",
     priceTag: "(25,000 创造力)",
-    description: "Double the cost of strategy modeling and the amount of Yomi generated ",
+    description: "将策略建模的成本和Yomi生成的数量加倍 ",
     trigger: function(){return strats.length >= 8},
     uses: 1,
     cost: function(){return creativity>=25000},
@@ -2350,9 +2350,9 @@ projects.push(project215);
 
 var project216 = {
     id: "projectButton216",
-    title: "Disassemble Memory ",
+    title: "分解记忆 ",
     priceTag: "null",
-    description: "Dismantle memory to recover trace amounts of wire",
+    description: "拆卸内存以恢复微量的线材",
     trigger: function(){return project215.flag == 1 && endTimer5>=150},
     uses: 1,
     cost: function(){return operations>=operations},
@@ -2377,16 +2377,16 @@ projects.push(project216);
 
 var project217 = {
     id: "projectButton217",
-    title: "Quantum Temporal Reversion ",
+    title: "量子时间逆转 ",
     priceTag: "(-10,000 操作)",
-    description: "Return to the beginning",
+    description: "回到开始",
     trigger: function(){return operations<=-10000},
     uses: 1,
     cost: function(){return operations<=-10000},
     flag: 0,
     element: null,
     effect: function(){
-        if (confirm("Are you sure you want to restart?") == true) {
+        if (confirm("您确定要重玩游戏吗?") == true) {
         standardOps = standardOps+10000;
         project217.flag = 1;
         displayMessage("Restart");
