@@ -457,7 +457,7 @@
         <br />   
             
         <button class = "button2" id = "btnQcompute" onclick = "qComp()">    
-        Compute
+        计算
         </button>   
         <span id="qCompDisplay">
         &nbsp;
@@ -513,11 +513,11 @@
             <table class="table1">
                 
             <tr>
-                <th>Stock</th>
-                <th>Amt.</th>
-                <th>Price</th>
-                <th>Total</th>
-                <th>P/L</th>
+                <th>股票</th>
+                <th>数量</th>
+                <th>价格</th>
+                <th>总计</th>
+                <th>涨/跌</th>
             </tr>    
                 
             <tr id = "stock1Display">
@@ -563,24 +563,24 @@
           
         <div id = "investmentEngineUpgrade">    
         <button class = "button2" id = "btnImproveInvestments"
-        onclick="investUpgrade()">Upgrade Investment Engine</button><span class = "engineText7"> Level: </span><span class = "engineText7" id = "investmentLevel">0</span><br />
+        onclick="investUpgrade()">升级投资引擎</button><span class = "engineText7"> 等级: </span><span class = "engineText7" id = "investmentLevel">0</span><br />
         <p class = "engineText8">成本: <span id="investUpgradeCost">100</span> Yomi</p>  
         </div>       
 
         <div class=engine2 id="strategyEngine">
         <p class=engineText>
-           <b>Strategic Modeling</b>
+           <b>战略模型</b>
             
            <select id = "stratPicker">
-                    <option value="10">Pick a Strat</option>
-                    <option value="0">RANDOM</option>
+                    <option value="10">选择一个参数</option>
+                    <option value="0">随机</option>
                 </select>      
         <button class = "button2" id = "btnRunTournament"
-        onclick="runTourney()">Run</button><br />
+        onclick="runTourney()">运行</button><br />
         
         <div id = "tournamentLabel">   
         <p class="clean2">
-        <span id="tourneyDisplay">Pick strategy, run tournament, gain yomi</span><br />   
+        <span id="tourneyDisplay">选择策略，比赛，赢得yomi</span><br />   
         </p>
         </div> 
             
@@ -610,18 +610,18 @@
                 
             <tr>
                 <th>&nbsp;</th>
-                <th><span id= vLabela>Move A</span></th>
-                <th><span id= vLabelb>Move B</span></th>
+                <th><span id= vLabela>移动 A</span></th>
+                <th><span id= vLabelb>移动 B</span></th>
             </tr>    
                 
             <tr>
-                <td><span id= hLabela>Move A</span></td> 
+                <td><span id= hLabela>移动 A</span></td> 
                 <td id = "payoffCellAA"><span id = aaPayoffH>0</span>,<span id = aaPayoffV>0</span></td> 
                 <td id = "payoffCellAB"><span id = abPayoffH>0</span>,<span id = abPayoffV>0</span></td>  
 
             </tr>
             <tr>
-                <td><span id= hLabelb>Move B</span></td>  
+                <td><span id= hLabelb>移动 B</span></td>  
                 <td id = "payoffCellBA"><span id = baPayoffH>0</span>,<span id = baPayoffV>0</span></td> 
                 <td id = "payoffCellBB"><span id = bbPayoffH>0</span>,<span id = bbPayoffV>0</span></td> 
 
