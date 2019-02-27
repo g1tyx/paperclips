@@ -72,7 +72,7 @@ for (i=0; i<battleNames.length; i++){
 
 function generateBattleName(){
     var x = Math.floor(Math.random()*battleNames.length);
-    var name = battleNames[x] + " " + battleNumbers[x];
+    var name = cnItem(battleNames[x]) + " " + battleNumbers[x];
     battleNumbers[x] = battleNumbers[x] + 1;
     return name
 }
