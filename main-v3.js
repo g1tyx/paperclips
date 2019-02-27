@@ -3389,8 +3389,8 @@ function addProc(){
         creativitySpeed = Math.log10(processors) * Math.pow(processors,1.1) + processors-1;    
         processorsElement.innerHTML = processors;
         if (creativityOn == 1){
-          displayMessage("Processor added, operations (or creativity) per sec increased")
-        } else {displayMessage("Processor added, operations per sec increased")}
+          displayMessage("处理器增加，每秒钟的操作(或创造力)增加")
+        } else {displayMessage("处理器增加，每秒操作增加")}
     
         if (humanFlag == 0){
             swarmGifts = swarmGifts - 1;
